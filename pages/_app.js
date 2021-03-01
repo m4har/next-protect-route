@@ -1,7 +1,9 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import useProtect from "../components/hooks/Protect";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  useProtect();
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
